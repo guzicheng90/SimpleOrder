@@ -1,0 +1,21 @@
+<view>冒泡事件：当点击子容器，则父容器，父容器的父容器都会被点击</view>
+<view>冒泡事件包含：
+点击事件：tap
+长按时间：longtap
+触摸事件：touchstart touchend touchmove touchcancel
+</view>
+<view>
+bind:会产生冒泡事件 bindtap
+catch：不会产生冒泡事件 catchtap
+</view>
+<view>
+currentTarget:绑定的view的事件
+targht:触发事件的源控件
+如点击view2，
+则view2 currentTarget的id显示view2 target的id为view2
+则view1 currentTarget的id显示view1 target的id为view2
+</view>
+<view>
+绑定dataset：data-title data-id
+取值：event.dataset.id event.dataset.title
+</view>
